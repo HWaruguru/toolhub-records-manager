@@ -1,1 +1,39 @@
-<p>dashboard works!</p>
+<div class="holder">
+  <div class="number-of-tools">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Total Number of Tools</h5>
+
+        <h1 [countUp]="5300">0</h1>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Tools with Missing Information</h5>
+        <h1 [countUp]="1300">0</h1>
+      </div>
+    </div>
+  </div>
+  <div class="percentage">
+    <h5>Percentage of Tools with Missing Information</h5>
+    <circle-progress
+      [percent]="75"
+      [radius]="100"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#78C000'"
+      [innerStrokeColor]="'#C7E596'"
+      [animation]="true"
+      [animationDuration]="400"
+    ></circle-progress>
+  </div>
+
+  <div class="tools-fixed">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <h5 class="card-title">Number of Tools Edited</h5>
+        <h1 [countUp]="549">0</h1>
+      </div>
+    </div>
+  </div>
+</div>
