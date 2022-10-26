@@ -1,1 +1,41 @@
-<h1>{{home}}</h1>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Help us add missing fields</h5>
+    &nbsp;
+    <p class="card-text">
+      Currently, many tools in Toolhub have missing or incomplete information.
+    </p>
+    <p>
+      Please help us add the missing fields and incomplete information by
+      clicking on the <strong><span style="color: #3367CB">Yes Please</span></strong> button.
+    </p>
+
+    <p>
+      You can also click <strong><span style="color:#3367CB">Skip to Next</span></strong> to see if you would prefer to add the next missing
+      field
+    </p>
+
+    <ul class="list-group">
+        <div class="list-group-item entry">
+            <span class="field">Tool Name</span>
+            <span class="field-value">{{currentTask.toolName}}</span>
+        </div>
+        <div class="list-group-item entry">
+            <span class="field">Tool Description</span>
+            <span class="field-value">{{currentTask.description}}</span>
+        </div>
+        <div class="list-group-item entry">
+            <span class="field">Url</span>
+            <span class="field-value"><a href="{{currentTask.url}}">{{currentTask.url}}</a></span>
+        </div>
+        <div class="list-group-item entry">
+            <span class="field">TMissing Field Name</span>
+            <span class="field-value">{{currentTask.missingField}}</span>
+        </div>
+      </ul>
+    <div class="buttons">
+      <span class="btn btn-primary">Yes Please</span>
+      <span class="btn btn-primary" (click)="getNextTask()">Skip to Next</span>
+    </div>
+  </div>
+</div>
