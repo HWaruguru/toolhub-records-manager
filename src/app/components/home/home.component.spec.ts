@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 
@@ -19,7 +19,23 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render tool name', () => {
+    const compiled = fixture.debugElement.nativeElement as HTMLElement;
+    expect(compiled.querySelector('.tool-name')?.textContent).toContain('Pywikibot');
+  });
+
+  it('should render another tool name when Skip to Next button is clicked', fakeAsync(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    let button = compiled.querySelector('.next');
+    button.click();
+    tick();
+    fixture.detectChanges();
+    fixture.whenStable().then( () => {
+      expect(compiled.querySelector('.tool-name')?.textContent).toContain('toolforge-authors');
+    })
+  }));
 });

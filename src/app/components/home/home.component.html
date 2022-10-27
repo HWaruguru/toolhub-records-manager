@@ -7,18 +7,18 @@
     </p>
     <p>
       Please help us add the missing fields and incomplete information by
-      clicking on the <strong><span style="color: #3367CB">Yes Please</span></strong> button.
+      clicking on the <strong><span style="color: #78C000">Yes Please</span></strong> button.
     </p>
 
     <p>
-      You can also click <strong><span style="color:#3367CB">Skip to Next</span></strong> to see if you would prefer to add the next missing
+      You can also click <strong><span style="color:#78C000">Skip to Next</span></strong> to see if you would prefer to add the next missing
       field
     </p>
 
     <ul class="list-group">
         <div class="list-group-item entry">
             <span class="field">Tool Name</span>
-            <span class="field-value">{{currentTask.toolName}}</span>
+            <span class="field-value tool-name">{{currentTask.toolName}}</span>
         </div>
         <div class="list-group-item entry">
             <span class="field">Tool Description</span>
@@ -35,7 +35,7 @@
       </ul>
     <div class="buttons">
       <span class="btn btn-primary">Yes Please</span>
-      <span class="btn btn-primary" (click)="getNextTask()">Skip to Next</span>
+      <span class="btn btn-primary next" (click)="getNextTask()">Skip to Next</span>
     </div>
   </div>
 </div>

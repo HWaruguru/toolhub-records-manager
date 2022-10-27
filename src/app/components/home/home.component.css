@@ -26,3 +26,12 @@
     width: 70%;
     word-wrap: break-word;
 }
+
+.btn {
+    background-color: #78C000 !important;
+    border-color:#78C000 !important;
+}
+
+a {
+    color: #78C000 !important;
+}

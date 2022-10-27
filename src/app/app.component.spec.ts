@@ -20,16 +20,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'toolhub-records-manager'`, () => {
+  it(`should have as title 'Toolhub Records Manager'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('toolhub-records-manager');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('toolhub-records-manager app is running!');
+    expect(app.title).toEqual('Toolhub Records Manager');
   });
 });
