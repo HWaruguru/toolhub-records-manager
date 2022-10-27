@@ -1,0 +1,36 @@
+.header {
+  text-align: center;
+  margin: 2em;
+}
+
+.entry {
+  display: flex;
+  flex-direction: row;
+}
+
+.field {
+  width: 50%;
+}
+
+.field-value {
+  width: 50%;
+}
+
+.leaders {
+    width: 50%;
+}
+
+.lead-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-edits {
+    text-align: center;
+}
+
+td {
+    padding: 0.5em;
+}
