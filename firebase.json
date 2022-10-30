@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/toolhub-records-manager",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

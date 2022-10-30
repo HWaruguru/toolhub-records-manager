@@ -1,37 +1,85 @@
 .card {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .field-details {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .entry {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .field {
-    width:30%;
+  width: 30%;
 }
 
 .field-value {
-    width: 70%;
-    word-wrap: break-word;
+  width: 70%;
+  word-wrap: break-word;
 }
 
 .btn {
-    background-color: #78C000 !important;
-    border-color:#78C000 !important;
+  background-color: #3367CB !important;
+  border-color: #3367CB !important;
 }
 
 a {
-    color: #78C000 !important;
+  color: #3367CB !important;
 }
+
+form {
+  margin-top: 1em;
+  width: 100%
+}
+
+.search input {
+  height: 3em;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 90%;
+    background: #f1f1f1;
+  }
+  
+
+  form.example button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #3367CB;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #3367CB;
+  }
+  
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  

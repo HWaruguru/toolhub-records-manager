@@ -1,13 +1,30 @@
 
-.btn-outline-success:hover {
+/* .btn-outline-success:hover {
     color: black !important;
-    background-color: #78C000 !important;
-    border-color: #78C000 !important;
+    background-color: #3367CB !important;
+    border-color: #3367CB !important;
 }
 
 .btn-outline-success {
-    color: #78C000 !important;
+    color: #3367CB !important;
     background-color: transparent;
     background-image: none;
-    border-color: #78C000 !important;
+    border-color: #3367CB !important;
+} */
+.navbar{
+    background-color: #3367CB!important;
 }
+
+.login {
+    background-color: #202122;
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-color: #202122;
+}
+
+.language {
+    border-color: #202122;
+    margin-right: 1em;
+}
+

@@ -1,24 +1,64 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="/home">{{title}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" routerLink="/dashboard">Records Dashboard</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/leaderboard">Leaderboard</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
+  <a class="navbar-brand" routerLink="/home">
+    <img
+      src="https://toolhub.wikimedia.org/static/img/logo-solid-white.svg"
+      style="height: 35px; width: 35px; background-position: center center"
+    />   {{ title }}</a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Records Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/leaderboard">Leaderboard</a>
+      </li>
+    </ul>
+  </div>
+  <button
+    type="button"
+    class="ma-1 transparent elevation-0 v-btn v-btn--is-elevated v-btn--has-bg theme--dark v-size--default"
+    role="button"
+    aria-haspopup="true"
+    aria-expanded="false"
+  >
+    <span class="v-btn__content"
+      ><i
+        aria-hidden="true"
+        title="British English"
+        class="language white-text v-icon notranslate me-2 mdi mdi-translate theme--dark"
+      ></i>
+      British English
+    </span>
+  </button>
+
+  <button
+    class="login ma-1 v-btn v-btn--is-elevated v-btn--has-bg theme--dark v-size--default secondary"
+    ><span class="v-btn__content">
+      Login
+      <i
+        aria-hidden="true"
+        class="v-icon notranslate mdi mdi-login theme--dark"
+      ></i></span
+  ></button>
+
+</nav>
+
+

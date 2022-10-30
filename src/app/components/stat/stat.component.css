@@ -1,0 +1,54 @@
+.holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+  }
+  
+  .card {
+    margin-left: 5rem;
+  }
+  
+  .number-of-tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .progress-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    height: 30%;
+  }
+  
+  .progress {
+    width: 50%;
+  }
+  
+  .tools-fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  
+  .percentage h5 {
+      text-align: center !important;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  .percentage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .tools {
+      padding: 20px;
+      text-align: center;
+  }
